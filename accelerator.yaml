@@ -11,14 +11,72 @@ accelerator:
       required: true
       dataType: string
       inputType: text
+  #
     - name: gitUrl
       description: GitHub or GitLab repository url
       dataType: string
       inputType: text
       required: true
+  #
     - name: gitBranch
       description: git branch name
       dataType: string
       inputType: text
       required: true
       defaultValue: main
+  #
+    - name: wavefront
+      description: Add wavefront support
+      dataType: boolean
+      defaultValue: true
+      inputType: toggle   # TOGGLE
+      required: true
+  #
+    - name: with-greeting
+      description: what word to use to say hello
+      dataType: string
+      defaultValue: Hello
+      paramLabel: WORD
+      inputType: text     # TEXT
+      required: true
+  #
+    - name: with-additional-message
+      description: Additional message to output
+      dataType: string
+      inputType: textarea     # TEXT AREA
+      required: true
+  #
+    - name: flavor
+      description: Ice Cream Flavors
+      dataType: string
+      defaultValue: strawberry
+      inputType: checkbox    # CHECKBOX (multiple options)
+      choices:
+        vanilla: Valilla
+        chocolate: Chocolate
+        strawberry: Strawberry
+      required: false
+  #
+    - name: platform
+      description: platform to target
+      dataType: string
+      defaultValue: azure
+      inputType: select    # SELECT (single option)
+      choices:
+        azure: Microsoft Azure
+        lambda: AWS Lambda
+        google: Google Cloud Platform
+      required: true
+#
+    - name: beverage
+      description: What to drink
+      dataType: string
+      defaultValue: water
+      inputType: radio     # RADIO (single option)
+      choices:
+        water: Water
+        milk: Milk
+        coke: Coke
+        coffee: Coffee
+        tea: Tea
+      required: true
