@@ -2,9 +2,9 @@ apiVersion: accelerator.tanzu.vmware.com/v1alpha1
 kind: Accelerator
 metadata:
   name: "acc-name"
+spec:
   description: |
     acc-description
-spec:
   tags:
     - "meta"
   git:
