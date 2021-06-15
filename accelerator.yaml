@@ -6,6 +6,12 @@ accelerator:
     - Tanzu
     - Accelerator
   options:
+    - name: tagTest
+      description: tag description can be quite long can be quite long
+      dataType: string
+      inputType: tag
+      required: true
+  #
     - name: acceleratorName
       description: Kubernetes resource name - see https://kubernetes.io/docs/concepts/overview/working-with-objects/names/
       required: true
@@ -52,7 +58,7 @@ accelerator:
       defaultValue: strawberry
       inputType: checkbox    # CHECKBOX (multiple options)
       choices:
-        vanilla: Valilla
+        vanilla: Vanilla
         chocolate: Chocolate
         strawberry: Strawberry
       required: false
