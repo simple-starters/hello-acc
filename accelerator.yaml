@@ -6,7 +6,8 @@ accelerator:
     - Tanzu
     - Accelerator
   options:
-    - name: minimal
+    - name: minimal,
+      display: true
   #
     - name: tagTest
       label: What tags would you like
