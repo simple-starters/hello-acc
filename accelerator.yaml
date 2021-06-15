@@ -12,7 +12,7 @@ accelerator:
       dataType: string
       inputType: tag
       required: true
-      defaultValue: yo
+      defaultValue: ["yo","yo2"]
   #
     - name: acceleratorName
       description: Kubernetes resource name - see https://kubernetes.io/docs/concepts/overview/working-with-objects/names/
@@ -57,7 +57,9 @@ accelerator:
     - name: flavor
       description: Ice Cream Flavors
       dataType: string
-      defaultValue: strawberry
+      defaultValue:
+        - vanilla
+        - strawberry
       inputType: checkbox    # CHECKBOX (multiple options)
       choices:
         vanilla: Vanilla
