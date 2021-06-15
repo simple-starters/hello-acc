@@ -6,6 +6,8 @@ accelerator:
     - Tanzu
     - Accelerator
   options:
+    - name: minimal
+  #
     - name: tagTest
       label: What tags would you like
       description: tag description can be quite long can be quite long
