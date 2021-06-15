@@ -7,10 +7,12 @@ accelerator:
     - Accelerator
   options:
     - name: tagTest
+      label: What tags would you like
       description: tag description can be quite long can be quite long
       dataType: string
       inputType: tag
       required: true
+      defaultValue: yo
   #
     - name: acceleratorName
       description: Kubernetes resource name - see https://kubernetes.io/docs/concepts/overview/working-with-objects/names/
