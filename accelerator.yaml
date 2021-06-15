@@ -36,7 +36,7 @@ accelerator:
     - name: wavefront
       description: Add wavefront support
       dataType: boolean
-      defaultValue: true
+      # defaultValue: true
       inputType: toggle   # TOGGLE
       required: true
   #
@@ -70,7 +70,7 @@ accelerator:
     - name: platform
       description: platform to target
       dataType: string
-      defaultValue: azure
+      # defaultValue: azure
       inputType: select    # SELECT (single option)
       choices:
         azure: Microsoft Azure
