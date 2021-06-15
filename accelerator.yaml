@@ -68,6 +68,7 @@ accelerator:
         chocolate: Chocolate
         strawberry: Strawberry
       required: false
+      display: true
   #
     - name: platform
       description: platform to target
