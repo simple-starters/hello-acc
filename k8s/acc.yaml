@@ -9,3 +9,6 @@ spec:
     url: "acc-git-url"
     ref:
       branch: "acc-git-branch"
+    ignore: |
+      .git/
+      .generators/

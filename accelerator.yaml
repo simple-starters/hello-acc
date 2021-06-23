@@ -82,15 +82,15 @@ accelerator:
         google: Google Cloud Platform
       required: true
 #
-    - name: beverage
-      description: What to drink
+    - name: k8sDeploy
+      label: Kubernetes deployment
+      display: true
+      description: Include Kubernetes deployment configuration files.
       dataType: string
-      defaultValue: water
+      defaultValue: none
       inputType: radio     # RADIO (single option)
       choices:
-        water: Water
-        milk: Milk
-        coke: Coke
-        coffee: Coffee
-        tea: Tea
-      required: true
+        none: None
+        vanilla: Vanilla Kubernetes deployment and service
+        skaffold: Skaffold (requires skaffold CLI)
+        kustomize: Kustomize (requires kustomize CLI)
